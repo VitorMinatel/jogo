@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: purple;
+  position: relative;
+}
+
+.boneco {
+  width: 150px;
+  height: 250px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.boneco img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.cabeca {
+  position: relative;
+  z-index: 1;
+}
+
+.corpo {
+  width: 100px;
+  height: 150px;
+  background-image: url("./assets/corpo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 120px;
+  z-index: 0;
+}
+
+.boneco-esquerdo {
+  left: 25%;
+}
+
+.boneco-direito {
+  right: 25%;
+}
+
+.coracao {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 250px;
+  height: 250px;
+  background-image: url("./assets/coracao.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imagem-centro {
+  position: absolute;
+  opacity: 0;
+  background-image: url("./assets/nos.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 130px;
+  transition: opacity 0.3s ease-in-out;
+}
